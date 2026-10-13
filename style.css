@@ -1,0 +1,472 @@
+/* Styling Cyber Retro OS Neo-Brutalism */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+body {
+    background-color: #e2e8f0;
+    color: #000000;
+    line-height: 1.4;
+    overflow-x: hidden;
+    background-image: radial-gradient(#000000 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Palette Warna */
+.bg-lime  { background-color: #ccff00 !important; }
+.bg-cyan  { background-color: #00f0ff !important; }
+.bg-pink  { background-color: #ff007a !important; color: #ffffff; }
+.bg-black { background-color: #000000 !important; color: #ffffff; }
+.bg-white { background-color: #ffffff !important; }
+
+/* Jarak Antar Kontainer & Bagian */
+.container {
+    max-width: 950px;
+    margin: 70px auto;
+}
+
+/* Brutalist Window Boxes */
+.window-box {
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 0px #000000;
+    background: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* Window Header untuk Dragging */
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    border-bottom: 4px solid #000000;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: grab;
+}
+
+.window-header:active {
+    cursor: grabbing;
+}
+
+.window-controls span {
+    margin-left: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    padding: 0 6px;
+    border: 2px solid #000;
+    display: inline-block;
+}
+
+.window-body {
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Transisi Halus pada Elemen Interaktif */
+.btn-brutal, 
+.window-controls span, 
+nav ul li a, 
+.logo-badge, 
+#restore-btn,
+.contact-card {
+    transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                box-shadow 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                background-color 0.2s ease, 
+                color 0.2s ease;
+}
+
+.btn-brutal {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.btn-brutal:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.btn-brutal:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.window-controls span:hover {
+    background: #ff007a;
+    color: #fff;
+    transform: scale(1.15);
+}
+
+.window-controls span:active {
+    transform: scale(0.9);
+}
+
+#restore-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* Header & Navigation */
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-badge {
+    background: #ccff00;
+    color: #000000;
+    padding: 6px 12px;
+    font-weight: 900;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0px #ffffff;
+}
+
+.clock-badge {
+    padding: 4px 10px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    font-weight: 900;
+    color: #00f0ff !important;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    background: #00f0ff;
+    color: #000000;
+    border-color: #000000;
+    transform: translateY(-2px);
+}
+
+.nav-btn {
+    border: 2px solid #ffffff !important;
+}
+
+/* Marquee Banner */
+.marquee-container {
+    background: #ccff00;
+    border-bottom: 4px solid #000000;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 6px 0;
+}
+
+.marquee-text {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 14px;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-container:hover .marquee-text {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.desktop-area {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Hero Section */
+.sticker {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 2px solid #000;
+    font-weight: 900;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero-body h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.text-stroke {
+    display: inline-block;
+    padding: 0 10px;
+    color: #000;
+}
+
+.cursor {
+    animation: blink 1s step-end infinite;
+    font-weight: 900;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.hover-glitch { border: 3px solid #000; overflow: hidden; }
+.hover-glitch img { width: 100%; transition: 0.2s; display: block; }
+.hover-glitch:hover img { transform: scale(1.05); filter: contrast(150%) hue-rotate(90deg); }
+
+.pop-hover {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.window-box:hover .pop-hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.about-wrapper { display: flex; gap: 20px; }
+.about-img-container { flex: 1; }
+.about-text-container { flex: 1.5; }
+.about-text-container h2 { margin-bottom: 15px; font-size: 1.4rem; }
+.about-text-container p { margin-bottom: 10px; font-family: Arial, sans-serif; font-size: 0.95rem; }
+
+/* Menyamakan Ukuran Kotak Keahlian & Tools */
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0 !important;
+}
+.skill-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-img { width: 60px; height: 60px; border: 3px solid #000; padding: 4px; margin-bottom: 10px; background: #f8fafc; }
+.skills-grid h3 { font-size: 0.95rem; margin-bottom: 8px; }
+.skills-grid p { font-family: Arial, sans-serif; font-size: 0.85rem; }
+
+/* Styling Pendidikan 4 Kolom dengan Foto Seragam */
+.edu-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.edu-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0 !important;
+}
+.edu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 15px !important;
+}
+.edu-img-wrapper {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 12px;
+}
+.edu-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.edu-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+.edu-school-name {
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+    color: #444;
+    margin-bottom: 10px;
+}
+.year-badge { 
+    display: inline-block; 
+    padding: 2px 6px; 
+    border: 2px solid #000; 
+    font-size: 11px; 
+    font-weight: 900; 
+    color: #000; 
+}
+
+.exp-wrapper { display: flex; flex-direction: column; gap: 20px; }
+.exp-card { padding: 15px !important; }
+.exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.exp-header h3 { font-size: 1rem; }
+.exp-sub { font-weight: bold; font-size: 0.85rem; color: #000000; margin-bottom: 8px; }
+.exp-card p { font-family: Arial, sans-serif; font-size: 0.9rem; }
+
+/* Menyamakan Ukuran Galeri Foto (3 Atas, 2 Bawah) */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-grid-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0 !important;
+}
+
+.gallery-card {
+    padding: 12px !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-img-wrapper {
+    width: 100%;
+    height: 180px;
+}
+
+.gallery-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Me Styling */
+.contact-desc {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.contact-card:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.contact-icon {
+    font-size: 1.6rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+.contact-val {
+    font-size: 0.9rem;
+    font-weight: 900;
+    word-break: break-all;
+}
+
+.location-badge {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 3px solid #000000;
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .about-wrapper { flex-direction: column; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .edu-grid-4 { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .gallery-grid-top, .gallery-grid-bottom { grid-template-columns: 1fr; }
+    .draggable { position: static !important; transform: none !important; }
+}

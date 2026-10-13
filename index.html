@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiyoshi Oloan - Cyber OS Brutalism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tombol Restore untuk Mengembalikan Jendela yang Ditutup -->
+    <button id="restore-btn" class="btn-brutal bg-lime">
+        &#8634; RESTORE WINDOWS
+    </button>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="logo-badge">KIYOSHI_OS.EXE</div>
+        <nav>
+            <ul>
+                <li><span id="live-clock" class="bg-black clock-badge">00:00:00</span></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact" class="nav-btn bg-pink">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-container">
+        <div class="marquee-text">
+            WELCOME TO MY SYSTEM /// TEKNOLOGI REKAYASA INFORMATIKA INDUSTRI /// READY FOR COLLABORATION /// CYBER NEO-BRUTALISM ///
+        </div>
+    </div>
+
+    <main class="desktop-area">
+        
+        <!-- 1. HERO SECTION -->
+        <section class="window-box bg-white draggable" style="max-width: 800px; margin: 20px auto 50px auto;">
+            <div class="window-header bg-black">
+                <span class="window-title">SYSTEM_HERO.EXE</span>
+                <div class="window-controls">
+                    <span class="btn-min" title="Minimize">_</span>
+                    <span class="btn-close" title="Close">X</span>
+                </div>
+            </div>
+            <div class="window-body text-center hero-body">
+                <div class="sticker bg-lime">PORTFOLIO 2026</div>
+                <h1>HALO, SAYA <br><span class="text-stroke bg-cyan" id="typewriter"></span><span class="cursor">_</span></h1>
+                <p class="hero-sub">WEB DEVELOPER & MAHASISWA IT</p>
+                <a href="#contact" class="btn-brutal bg-pink">INITIATE CONTACT()</a>
+            </div>
+        </section>
+
+        <!-- 2. TENTANG SAYA -->
+        <section id="about" class="container">
+            <div class="window-box draggable">
+                <div class="window-header bg-cyan">
+                    <span class="window-title">ABOUT_KIYOSHI.TXT</span>
+                    <div class="window-controls">
+                        <span class="btn-min">_</span><span class="btn-close">X</span>
+                    </div>
+                </div>
+                <div class="window-body about-wrapper">
+                    <div class="about-img-container hover-glitch">
+                        <img src="GW.jpeg" alt="Foto Profil">
+                    </div>
+                    <div class="about-text-container">
+                        <h2>TENTANG SAYA</h2>
+                        <p>Saya adalah mahasiswa di Politeknik Manufaktur Bandung, program studi Teknologi Rekayasa Informatika Industri.</p>
+                        <p>Saya berfokus dalam eksplorasi antarmuka web, teknologi <em>front-end</em>, serta pengelolaan <em>repository</em> dan <em>cloud development environments</em> secara efisien.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KEAHLIAN & TOOLS -->
+        <section id="skills" class="container">
+            <h2 class="section-tag bg-lime">KEAHLIAN & TOOLS</h2>
+            <div class="skills-grid">
+                <div class="window-box bg-white draggable skill-box">
+                    <div class="window-header bg-black"><span class="window-title">CISCO</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center skill-body">
+                        <img src="https://external-preview.redd.it/network-topology-icons-cisco-v0-79l6g60m2kyDJLJ3eBuFhcICI2hnXIvyqbfL3M0pywI.jpg?auto=webp&s=e066510008c7af112cae2d9b5b4219920dd5ff32" alt="Cisco" class="icon-img pop-hover">
+                        <h3>Cisco Packet Tracer</h3>
+                        <p>Kemampuan untuk merancang, mengonfigurasi, dan menguji simulasi jaringan komputer secara virtual sebelum diterapkan pada perangkat keras asli..</p>
+                    </div>
+                </div>
+                <div class="window-box bg-white draggable skill-box">
+                    <div class="window-header bg-black"><span class="window-title">MIKROTIK</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center skill-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQshbAwMXsdEZ7NF6zoEy57ymKjnvl5ZDFk1W2DN2qMWIwGPEFBbgyMAf96&s=10" alt="Mikrotik" class="icon-img pop-hover">
+                        <h3>MIKROTIK</h3>
+                        <p>Kemampuan untuk mengonfigurasi, mengelola, dan mengamankan perangkat keras jaringan MikroTik guna mengatur lalu lintas internet di sebuah jaringan lokal.</p>
+                    </div>
+                </div>
+                <div class="window-box bg-white draggable skill-box">
+                    <div class="window-header bg-black"><span class="window-title">LAN</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center skill-body">
+                        <img src="https://cdn-icons-png.flaticon.com/512/399/399128.png" alt="lan" class="icon-img pop-hover">
+                        <h3>CRIMPING LAN</h3>
+                        <p>Kemampuan teknis dalam membuat, merakit, dan menguji kabel jaringan secara manual sesuai dengan standar industri untuk memastikan konektivitas fisik antarperangkat berjalan stabil tanpa gangguan (loss).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PENDIDIKAN (Diperbarui dengan 4 Foto Berukuran Seragam: SD, SMP, SMK, Kampus) -->
+        <section id="pendidikan" class="container">
+            <h2 class="section-tag bg-pink">RIWAYAT PENDIDIKAN</h2>
+            <div class="edu-grid-4">
+                <!-- SD -->
+                <div class="window-box bg-white draggable edu-box">
+                    <div class="window-header bg-black"><span class="window-title">SD.SYS</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center edu-card">
+                        <div class="hover-glitch edu-img-wrapper">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwOipfUrqS7fjVv5zO-lZwrQQX9ExeothROsVzekjiu-EklHPttNtAJI7vz0A4LJ_2d63fDWi6QD8FHrU5xaory6-I_Z8bqjAgQMFC0IqFRJ12bcD-eccRLsqIPgZKIhyphenhyphenL3O7OVTo-n73MgJZMAQKVDIPl4vXFogJPp0Kl50XWom6g8txT-zmTk0fHvMfj/s1600/IMG-20241024-WA0019.jpg" alt="Sekolah Dasar">
+                        </div>
+                        <h3>Sekolah Dasar (SD)</h3>
+                        <p class="edu-school-name">SDN Cibuntu 01</p>
+                        <span class="year-badge bg-lime">Lulus</span>
+                    </div>
+                </div>
+                <!-- SMP -->
+                <div class="window-box bg-white draggable edu-box">
+                    <div class="window-header bg-black"><span class="window-title">SMP.SYS</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center edu-card">
+                        <div class="hover-glitch edu-img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9XUO0qXCt9IOQMhHb9pnEqHRPIgiiAvZUlIMzr-nng&s=10" alt="Sekolah Menengah Pertama">
+                        </div>
+                        <h3>Sekolah Menengah Pertama (SMP)</h3>
+                        <p class="edu-school-name">SMPN 2 Tambun Selatan</p>
+                        <span class="year-badge bg-lime">Lulus</span>
+                    </div>
+                </div>
+                <!-- SMK -->
+                <div class="window-box bg-white draggable edu-box">
+                    <div class="window-header bg-black"><span class="window-title">SMK.SYS</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center edu-card">
+                        <div class="hover-glitch edu-img-wrapper">
+                            <img src="smk.jpeg" alt="Sekolah Menengah Kejuruan">
+                        </div>
+                        <h3>Sekolah Menengah Kejuruan (SMK)</h3>
+                        <p class="edu-school-name">SMKN 1 Cikarang Barat</p>
+                        <span class="year-badge bg-lime">Lulus - 2025</span>
+                    </div>
+                </div>
+                <!-- KAMPUS -->
+                <div class="window-box bg-white draggable edu-box">
+                    <div class="window-header bg-black"><span class="window-title">KAMPUS.SYS</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                    <div class="window-body text-center edu-card">
+                        <div class="hover-glitch edu-img-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqqHOs7qs51i_vVtOQJj5EwdVFEnCUOX3El_EqbSUTgqQ1fRo6pyoB44&s=10" alt="Politeknik Manufaktur Bandung">
+                        </div>
+                        <h3>Politeknik Manufaktur Bandung</h3>
+                        <p class="edu-school-name">Teknologi Rekayasa Informatika Industri</p>
+                        <span class="year-badge bg-lime">2025 – SEKARANG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PENGALAMAN -->
+        <section id="pengalaman" class="container">
+            <h2 class="section-tag bg-cyan">PENGALAMAN</h2>
+            <div class="exp-wrapper">
+                <div class="window-box bg-white draggable">
+                    <div class="window-header bg-black">
+                        <span class="window-title">EXP_01_PKL.LOG</span>
+                        <div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div>
+                    </div>
+                    <div class="window-body exp-card">
+                        <div class="exp-header">
+                            <h3>PRAKTEK KERJA LAPANGAN (PKL)</h3>
+                            <span class="year-badge bg-pink">2023 - 2024</span>
+                        </div>
+                        <p class="exp-sub">IT - Support [PT. Indonesia Toppan Printing]</p>
+                        <p>Melakukan observasi, pemeliharaan sistem informasi internal, serta membantu pengujian fungsionalitas fitur dalam proyek pengembangan instansi.</p>
+                    </div>
+                </div>
+
+                <div class="window-box bg-white draggable">
+                    <div class="window-header bg-black">
+                        <span class="window-title">EXP_02_UKM.LOG</span>
+                        <div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div>
+                    </div>
+                    <div class="window-body exp-card">
+                        <div class="exp-header">
+                            <h3>UNIT KEGIATAN MAHASISWA (UKM)</h3>
+                            <span class="year-badge bg-pink">2025 – SEKARANG</span>
+                        </div>
+                        <p class="exp-sub">Anggota Aktif - [ATI - Amateur Telecommunition Information] </p>
+                        <p>Mendukung kegiatan operasional organisasi, berpartisipasi dalam event kampus, dan mengasah <em>soft-skills</em> kolaborasi tim secara profesional.</p>
+                    </div>
+                </div>
+
+                <div class="window-box bg-white draggable">
+                    <div class="window-header bg-black">
+                        <span class="window-title">EXP_03_HIMPUNAN.LOG</span>
+                        <div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div>
+                    </div>
+                    <div class="window-body exp-card">
+                        <div class="exp-header">
+                            <h3>HIMPUNAN MAHASISWA (HIMA)</h3>
+                            <span class="year-badge bg-pink">2025 – SEKARANG</span>
+                        </div>
+                        <p class="exp-sub">Anggota - Pengabdian Masyarakat [HIMAMO]</p>
+                        <p>Sebagai anggota di divisi pengabdian masyarakat (Pengmas/Sosmas), tugas Anda fokus pada eksekusi teknis, survei lapangan, dan menjaga hubungan langsung dengan masyarakat. Anggota adalah penggerak utama agar program kerja yang dirancang oleh kepala divisi dapat berjalan sukses..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. GALERI FOTO -->
+        <section id="gallery" class="container">
+            <h2 class="section-tag bg-lime">SYSTEM_GALLERY.LOG</h2>
+            <div class="gallery-container">
+                <div class="gallery-grid-top">
+                    <div class="window-box bg-white draggable gallery-box">
+                        <div class="window-header bg-black"><span class="window-title">IMG_01.PNG</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                        <div class="window-body text-center gallery-card">
+                            <div class="hover-glitch gallery-img-wrapper">
+                                <img src="duo.jpeg" alt="Galeri 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-box bg-white draggable gallery-box">
+                        <div class="window-header bg-black"><span class="window-title">IMG_02.PNG</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                        <div class="window-body text-center gallery-card">
+                            <div class="hover-glitch gallery-img-wrapper">
+                                <img src="PR1.jpeg" alt="Galeri 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-box bg-white draggable gallery-box">
+                        <div class="window-header bg-black"><span class="window-title">IMG_03.PNG</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                        <div class="window-body text-center gallery-card">
+                            <div class="hover-glitch gallery-img-wrapper">
+                                <img src="GW3.jpeg" alt="Galeri 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-grid-bottom">
+                    <div class="window-box bg-white draggable gallery-box">
+                        <div class="window-header bg-black"><span class="window-title">IMG_04.PNG</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                        <div class="window-body text-center gallery-card">
+                            <div class="hover-glitch gallery-img-wrapper">
+                                <img src="SMK1.jpeg" alt="Galeri 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-box bg-white draggable gallery-box">
+                        <div class="window-header bg-black"><span class="window-title">IMG_05.PNG</span><div class="window-controls"><span class="btn-min">_</span><span class="btn-close">X</span></div></div>
+                        <div class="window-body text-center gallery-card">
+                            <div class="hover-glitch gallery-img-wrapper">
+                                <img src="PR3.jpeg" alt="Galeri 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. KONTAK -->
+        <section id="contact" class="container">
+            <h2 class="section-tag bg-pink">CONTACT ME</h2>
+            <div class="window-box bg-white draggable">
+                <div class="window-header bg-black">
+                    <span class="window-title">CONTACT_INFO.EXE</span>
+                    <div class="window-controls">
+                        <span class="btn-min">_</span>
+                        <span class="btn-close">X</span>
+                    </div>
+                </div>
+                <div class="window-body contact-wrapper">
+                    <p class="contact-desc">
+                        Silakan hubungi saya melalui saluran komunikasi dan media sosial di bawah ini:
+                    </p>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:email@domain.com" class="contact-card bg-lime">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <span class="contact-label">EMAIL</span>
+                                <span class="contact-val">raphaelsitoru2@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/628123456789" target="_blank" class="contact-card bg-cyan">
+                            <span class="contact-icon">💬</span>
+                            <div class="contact-details">
+                                <span class="contact-label">WHATSAPP / TELEPON</span>
+                                <span class="contact-val">+62 812-8230-0541</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Yosh-22" target="_blank" class="contact-card bg-pink">
+                            <span class="contact-icon">💻</span>
+                            <div class="contact-details">
+                                <span class="contact-label">GITHUB</span>
+                                <span class="contact-val">@Yosh-22</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com" target="_blank" class="contact-card bg-white">
+                            <span class="contact-icon">💼</span>
+                            <div class="contact-details">
+                                <span class="contact-label">LINKEDIN</span>
+                                <span class="contact-val">Kiyoshi Oloan Raphael Sitorus</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="location-badge bg-black">
+                        <span>📍 LOKASI: Bandung, Jawa Barat, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
